@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --nao-metal: #00FF7F;
+    --alcalino-terroso: #DAA520;
+    --alcalino: #B8860B;
+    --metais-transicao: #BC8F8F;
+    --halogenio: #4B0082;
+    --semimetal: #FF00FF;
+    --outros-metais: #DC143C;
+    --gas-nobre: #F08080;
+    --lantanideos: #FF8C00;
+    --actinidios: #FFFF00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.centro {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    width: 1200px;
+    margin: 40px auto;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .5);
+}
+
+.inicio {
+    position: fixed;
+    width: 80px;
+    bottom: 20px;
+    height: 40px;
+    font-size: .9em;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    background-color: #dee2e6;
+    border: 1px solid #ced4da;
+}
+
+.inicio:hover {
+    background-color: darksalmon;
+}
+
+.tabela-titulo {
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding: 25px 0;
+    background-color: #e9ecef;
+}
+
+.tabela {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1170px;
+    margin: 40px auto;
+}
+
+.elemento {
+    width: 55px;
+    height: 55px;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 3px;
+    border: 1px solid;
+}
+
+.elemento:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.vazio {
+    border: none;
+    width: 56.5px;
+    border-color: rgba(0, 0, 0, 0);
+    cursor: inherit !important;
+}
+
+.espaço {
+    height: 35px;
+    width: 100%;
+}
+
+h2 {
+    font-size: .9em;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #e9ecef;
+    border: 1px solid #e9ecef;
+    width: 1000px;
+    margin: 50px auto 0 auto;
+    text-indent: 20px;
+}
+
+.numero-atomico {
+    text-align: end;
+    font-size: .8em;
+}
+
+.simbolo {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.nome {
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.elemento:hover .nome {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.6s ease-in-out;
+    font-size: .6em;
+}
+
+.massa {
+    text-align: center;
+    font-size: .5em;
+    display: none;
+}
+
+.nao-metal {
+    background-color: var(--nao-metal);
+    border-color: var(--nao-metal);
+}
+
+.alcalino-terroso {
+    background-color: var(--alcalino-terroso);
+    border-color: var(--alcalino-terroso);
+}
+
+.alcalino {
+    background-color: var(--alcalino);
+    border-color: var(--alcalino);
+}
+
+.metais-transicao {
+    background-color: var(--metais-transicao);
+    border-color: var(--metais-transicao);
+}
+
+.halogenio {
+    background-color: var(--halogenio);
+    border-color: var(--halogenio);
+}
+
+.semimetal {
+    background-color: var(--semimetal);
+    border-color: var(--semimetal);
+}
+
+.outros-metais {
+    background-color: var(--outros-metais);
+    border-color: var(--outros-metais);
+}
+
+.gas-nobre {
+    background-color: var(--gas-nobre);
+    border-color: var(--gas-nobre);
+}
+
+.lantanideos {
+    background-color: var(--lantanideos);
+    border-color: var(--lantanideos);
+}
+
+.actinidios {
+    background-color: var(--actinidios);
+    border-color: var(--actinidios);
+}
+
+.legenda {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #A2C7D3;
+    width: 970px;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: beige;
+}
+
+.legenda-detalhes {
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+    margin-right: 40px;
+    border: 1px solid #ccc;
+    background-color: white;
+    position: relative;
+}
+
+.legenda-detalhes > .numero-atomico {
+    font-size: .8em;
+    margin: 8px;
+    line-height: 13px;
+}
+
+.legenda-detalhes > .simbolo {
+    font-size: 1.8em;
+    margin-top: 15px;
+}
+
+.legenda-detalhes > .nome {
+    font-size: 1.1em;  
+    margin-top: 8px;
+}
+
+.legenda .nome {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.legenda-cor {
+    width: 800px;
+    font-size: .8em;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.legenda-cor ul {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.legenda-cor ul li {
+    list-style: none;
+    margin: 3px;
+}
+
+.cor-quadrado {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: bottom;
+    border-radius: 3px;
+}
+
+table {
+    display: table;
+    min-width: 1200px;
+    margin: 90px auto 20px auto;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-weight: 300;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 25px 0;
+}
+
+thead th, 
+tbody td {
+    text-align: left;
+}
+
+table th,
+table td {
+    padding: 15px 15px;
+}
+
+table thead {
+    background-color: #e9ecef;
+    font-size: .8em;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    font-size: .8em;
+}

@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: darkseagreen;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    color: #97CA
+}
+
+h1:hover {
+    background-color: black;
+    color:whitesmoke;
+    cursor: pointer;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    color: rgba(220, 89, 8, 0.667);
+    font-weight: 500;
+}
+
+h3:hover{
+    background-color: black;
+    color:whitesmoke;
+    cursor: pointer;
+}
+
+.acess {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    color: black;
+    font-size: 20px;
+}
+
+input {
+    border: none;
+    border-radius: 7px;
+    outline: none;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro Biblioteca Virtual</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="EstiloCadastro.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Cadastro Biblioteca Virtual</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu sobrenome">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" class="form-control" id="telefone" placeholder="(XX) XXXX-XXXX">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço completo">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="estado">Estado</label>
+                    <select id="estado" class="form-control">
+                        <option selected>Selecione...</option>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SP</option>
+                        <option>SE</option>
+                        <option>TO</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control" id="cep" placeholder="XXXXX-XXX">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="interesses">Interesses</label>
+                    <select multiple class="form-control" id="interesses">
+                        <option>Clássicos</option>
+                        <option>Contos</option>
+                        <option>Ficção Científica</option>
+                        <option>Filosofia</option>
+                        <option>História</option>
+                        <option>Infantojuvenil</option>
+                        <option>Policial</option>
+                        <option>Romance</option>
+                        <option>Terror</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="termos">
+                        <label class="form-check-label" for="termos">
+                            Li e aceito os <a href="#">termos de uso</a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <script>
+            const form = document.getElementById('cadastro-form');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                alert('Formulário enviado!');
+            });
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+/* Definição do fundo personalizado */
+html,
+body {
+  height: 100%;
+}
+
+.container-fluid,
+.row,
+.col-sm-8,
+.col-md-6,
+.col-lg-4 {
+  height: 100%;
+}
+
+.bg-image {
+    background-image: url("biblioteca.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* Estilos para o formulário de login */
+  .card-login {
+    margin-top: 20vh;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  .card-login .card-title {
+    color: #007bff;
+  }
+  
+  .card-login form {
+    padding: 20px;
+  }
+  
+  .card-login button {
+    margin-top: 20px;
+  }
